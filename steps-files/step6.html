@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Martindale Abrasion Test Virtual Lab - Step 6: Cut 38 mm Specimen"/>
+  <title>Step 6 – Cut 38 mm Specimen – Martindale VLab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+  <div class="simulation-container">
+    <h1 class="title">Martindale Abrasion Test</h1>
+
+    <p class="instruction-text">
+      <span class="step-badge">Step 6</span>
+      Place the 38 mm cutter on the leather swatch and rotate the wheel to cut the specimen disc.
+    </p>
+
+    <div class="img-area" id="clickZone" role="button" tabindex="0" aria-label="Click or press Enter to advance animation frame">
+      <img alt="Step 6 Frame 1" src="../slides/slide_06_s00.png" class="sim-img visible" style="position:absolute;top:0;left:0;opacity:1;"/>
+      <img alt="Step 6 Frame 2" src="../slides/slide_06_s01.png" class="sim-img" style="position:absolute;top:0;left:0;opacity:0;"/>    </div>
+
+    <div class="click-hint" id="hint">▶ Click slide to advance</div>
+    <div class="slide-counter" id="counter"></div>
+    <div class="obs-log" id="obsLog"></div>
+
+    <button class="btn-prev" data-href="step5.html">◀ Prev</button>
+    <button class="btn-next" data-href="step7.html">Next ▶</button>
+
+    <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+  </div>
+
+  <script src="../js/sim-engine.js"></script>
+  <script>
+  (function () {
+    new SimStep({
+      container: '#clickZone',
+      prevPage:  'step5.html',
+      nextPage:  'step7.html',
+    });
+  })();
+  </script>
+</body>
+</html>
